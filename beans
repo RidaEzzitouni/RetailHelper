@@ -1,1 +1,76 @@
+package ma.fst.tp1.bean;
 
+/**
+ *
+ * @author rida_
+ */
+public class Commande {
+    
+   private long id;
+   private String code;
+   private double montantTotal;
+   private double montantPayeCheque; 
+   private double montantPayeEspece;
+
+    public Commande() {
+    }
+
+    public Commande(long id, String code, double montantTotal, double montantPayeCheque, double montantPayeEspece) {
+        this.id = id;
+        this.code = code;
+        this.montantTotal = montantTotal;
+        this.montantPayeCheque = montantPayeCheque;
+        this.montantPayeEspece = montantPayeEspece;
+    }
+
+   
+
+    public Commande(String code) {
+        this.code = code;
+    }
+ 
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public double getMontantTotal() {
+        return montantTotal;
+    }
+
+    public void setMontantTotal(double montantTotal) {
+        this.montantTotal = montantTotal;
+    }
+
+    public double getMontantPayeCheque() {
+        return montantPayeCheque;
+    }
+
+    public void setMontantPayeCheque(double montantPayeCheque) {
+        this.montantPayeCheque = montantPayeCheque;
+    }
+
+    public double getMontantPayeEspece() {
+        return montantPayeEspece;
+    }
+
+    public void setMontantPayeEspece(double montantPayeEspece) {
+        this.montantPayeEspece = montantPayeEspece;
+    }
+ @Override
+    public String toString() {
+        return "Commande{" + "id=" + id + ", code=" + code + ", montantTotal=" + montantTotal + ", montantPayeCheque=" + montantPayeCheque + ", montantPayeEspece=" + montantPayeEspece + '}';
+    }
+}
