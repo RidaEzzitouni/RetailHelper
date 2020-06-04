@@ -93,13 +93,13 @@ public class CommandeServiceTest {
 
     public static void main(String[] args) {
         init();
-//        chiffreAffaireTest();
-//        findByCodeTest();
-//        payerEspeceTest();
-        //findCommandespayeTest();
-//        findCommandesnonpayeTest();
+        chiffreAffaireTest();
+        findByCodeTest();
+        payerEspeceTest();
+        findCommandespayeTest();
+        findCommandesnonpayeTest();
         encaisserTest();
-//        findByIdTest();
+        findByIdTest();
 
     }
 
