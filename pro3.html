@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<title> image slider</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<link rel="stylesheet" type="text/css" href="style0.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>walid</title> 
+
+<style >
+.slider{    
+width: 700px;
+height: 450px;
+
+}
+.image{
+width: 700px;
+height: 450px;
+}
+.image img{
+width: 100% ;
+height: 100% ;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+<div class="menu-bar">
+<ul>
+<li class="active"><a href="pro.php" ><i class="fa fa-home" ></i>Home</a></li>
+<li>			  <a href="#" ><i class="fa fa-clone" ></i>Services</a>
+<div class="sub-menu-2">
+	<ul>
+	<li><a href="#">culturelle</a></li>
+	<li><a href="#">Athlétique</a></li>	
+	<li><a href="#">Touriste</a></li>	
+	</ul>
+</div>
+</li>
+
+
+<li>			   <a href="#" ><i class="fa fa-users" ></i>Client</a></li>
+<li>			   <a href="pro3.html" ><i class="fa fa-photo" ></i>Photos</a></li>
+<li>               <a href="#" ><i class="fa fa-phone" ></i>Contact</a>
+
+<div class="sub-menu-1">
+	<ul>
+	<li><a href="#">Directeur</a></li>
+	<li><a href="#">La Réception</a></li>
+	<li><a href="#">La Sécurité</a> /li>
+	</ul>çh
+</div>
+</li>
+
+</ul>
+</div></br></br>
+
+<center class="image.slider">
+	<div class="slider">
+		<div class="image">
+			<img src="carousel1.jpg" alt="">
+		</div>
+<div class="image">
+			<img src="carousel2.jpg" alt="">
+		</div>
+<div class="image">
+			<img src="carousel3.jpg" alt="">
+		</div>		
+
+<div class="image">
+			<img src="carousel4.jpg" alt="">
+		</div>		
+
+<div class="image">
+			<img src="carousel5.jpg" alt="">
+		</div>		
+
+<div class="image">
+			<img src="carousel6.jpg" alt="">
+		</div>		
+
+
+
+	</div>
+</center>
+
+
+<script >
+	var index=0;
+	var images;
+function autoSlide(n){
+images=document.getElementsByClassName()
+
+for ( var i =0; i<images.length;i++){
+images[i].style.display="none";
+
+}
+if(index>images.length-1){
+index=0;
+}
+
+images[index].style.display="block";
+index++;
+
+setTimeout(autoSlide,2000);
+
+}
+</script>
+
+
+
+</body>
+</html>
+
